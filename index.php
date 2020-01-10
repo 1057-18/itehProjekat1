@@ -7,6 +7,9 @@ if(!isset($_SESSION['userid'])) {
  $konvertor = json_decode($konvertor);
  $dollar_rate = $konvertor->rates->USD;
 ?>
+
+<!-- Provera Git konekcije -->
+
 <!DOCTYPE html>
 <html>
 <head>
