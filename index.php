@@ -10,7 +10,7 @@ if(!isset($_SESSION['userid'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Simple Shop</title>
+	<title>SportPro</title>
 	<!-- Latest compiled and minified CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet"> 
@@ -28,7 +28,7 @@ if(!isset($_SESSION['userid'])) {
     <div class="row">
       <div class="col-lg-12">
         <div class="page-header">
-          <h1>Svi nasi proizvodi u ponudi</h1>
+          <h1>Svi naši proizvodi u ponudi</h1>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@ if(!isset($_SESSION['userid'])) {
         <table class="table">
           <thead>
             <tr>
-              <th>Naziv proizvod</th>
+              <th>Naziv proizvoda</th>
               <th>Cena</th>
               <th>Dodaj proizvod u korpu</th>
             </tr>
@@ -54,12 +54,12 @@ if(!isset($_SESSION['userid'])) {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Unos kolicine</h4>
+          <h4 class="modal-title" id="myModalLabel">Unos količine</h4>
         </div>
         <div class="modal-body">
-          <p> Unesite kolicinu:</p>
+          <p> Unesite količinu:</p>
           <div class="form-group">
-            <label for="kolicina">Kolicina</label>
+            <label for="kolicina">Količina</label>
             <input type="text" class="form-control" id="kolicina" name="kolicina" placeholder="Kolicina...">
           </div>
           <input type="text" class="form-control" id="product_id" name="product_id" style="display: none;">

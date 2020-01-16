@@ -14,12 +14,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.php">Pocetna</span></a></li>
+          <li class="active"><a href="index.php">Početna</span></a></li>
           <li><a href="korpa.php">Korpa</a></li>
-          <li><a href="admin.php">Porudzbine</a></li>
+          <li><a href="admin.php">Porudžbine</a></li>
           <li><a href="dodaj.php">Dodaj</a></li>
           <li><a href="izmeni.php">Izmeni</a></li>
-          <li><a href="obrisi.php">Obrisi</a></li>
+          <li><a href="obrisi.php">Obriši</a></li>
           <li><a href="svi_proizvodi.php">Svi proizvodi</a></li>
           <li><a href="grafik.php">Grafik</a></li>
         </ul>

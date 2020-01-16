@@ -7,7 +7,7 @@ if(!isset($_SESSION['userid']) || $_SESSION['admin'] !=1) {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Simple Shop</title>
+	<title>SportPro</title>
 	<!-- Latest compiled and minified CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet"> 
