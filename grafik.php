@@ -10,15 +10,11 @@
 <body>
   <?php include "inc/nav.php"; ?>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <?php include "inc/jumbo.php"; ?>
-      </div>
-    </div>
+    
     <div class="row">
       <div class="col-lg-12">
         <div class="page-header">
-          <h1>Prodati proizvodi po danima <small>IP: <span id="ip_adresa"></span></small></h1>
+          <h1>Prodati proizvodi po danima: </h1>
         </div>
       </div>
     </div>
@@ -27,6 +23,13 @@
             <div id="chart_div"></div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+      <h3><small>IP: <span id="ip_adresa"></span></small></h3>
+      </div>
+    </div>
+    
+
   </div>
   
   <script

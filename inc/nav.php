@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Simple Shop</a>
+        <a class="navbar-brand" href="index.php"><img class="logo" src="img/haljina.png" alt=""></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -24,7 +24,9 @@
           <li><a href="grafik.php">Grafik</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="logout.php">Logout</a></li>
+        <li><a class="btn btn-success btn-sm" href="korpa.php" role="button">Pogledaj korpu</a></li>
+
+          <li><a href="logout.php">Logout <img class="logout" src="img/logout.png" alt=""></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

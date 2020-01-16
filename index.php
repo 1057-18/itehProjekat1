@@ -7,30 +7,28 @@ if(!isset($_SESSION['userid'])) {
  $konvertor = json_decode($konvertor);
  $dollar_rate = $konvertor->rates->USD;
 ?>
-
-<!-- Provera Git konekcije -->
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Simple Shop</title>
 	<!-- Latest compiled and minified CSS -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <?php include "inc/nav.php"; ?>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-12 d-flex justify-content-center">
         <?php include "inc/jumbo.php"; ?>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12">
         <div class="page-header">
-          <h1>Svi proizvodi</h1>
+          <h1>Svi nasi proizvodi u ponudi</h1>
         </div>
       </div>
     </div>
@@ -41,7 +39,7 @@ if(!isset($_SESSION['userid'])) {
             <tr>
               <th>Naziv proizvod</th>
               <th>Cena</th>
-              <th>Dodaj proizvod</th>
+              <th>Dodaj proizvod u korpu</th>
             </tr>
           </thead>
           <tbody>
@@ -84,7 +82,7 @@ if(!isset($_SESSION['userid'])) {
       var data = JSON.parse(json);
       var dollar_rate = "<?php echo $dollar_rate; ?>";
       $.each( data, function( key, value ) {
-        $("table tbody").append("<tr><td>"+value.product_name+"</td><td>"+value.price+" EUR ("+value.price*dollar_rate+" USD)</td><td><button class='btn btn-primary btn-sm' onclick='otvoriModal("+value.id+")'>Dodaj proizvod</button></td></tr>");
+        $("table tbody").append("<tr><td>"+value.product_name+"</td><td>"+value.price+" EUR ("+value.price*dollar_rate+" USD)</td><td><button class='btn btn-secondary btn-sm' onclick='otvoriModal("+value.id+")'>Dodaj u korpu</button></td></tr>");
       });
     });
 

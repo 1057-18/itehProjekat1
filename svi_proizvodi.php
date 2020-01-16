@@ -13,7 +13,8 @@ $q=$mysqli->query($sql);
 <head>
 	<title>Simple Shop</title>
 	<!-- Latest compiled and minified CSS -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" href="style.css">
@@ -21,11 +22,7 @@ $q=$mysqli->query($sql);
 <body>
   <?php include "inc/nav.php"; ?>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <?php include "inc/jumbo.php"; ?>
-      </div>
-    </div>
+
     <div class="row">
       <div class="col-lg-12">
         <div class="page-header">
